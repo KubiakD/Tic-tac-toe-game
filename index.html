@@ -1,19 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play tic tac toe game</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto+Serif&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="/styles/shared.css">
     <link rel="stylesheet" href="/styles/index.css">
 </head>
+
 <body>
     <header>
         <h1>Tic Tac Toe game</h1>
     </header>
-    <main></main>
+    <main>
+        <section id="introduction">
+            <div id="typing-effect">
+                Welcome to my Tic Tac Toe game project!
+            </div>
+            <p>This is one of my first projects, made with HTML, CSS and JavaScript. To start the game, set the player's
+                nicknames and click "Start new game" button.</p>
+        </section>
+        <section id="player-config">
+            <ol>
+                <li>
+                    <h2>Player1</h2>
+                    <h3>
+                        <span class="material-symbols-rounded">
+                            edit
+                        </span>
+                        Player name
+                    </h3>
+                    <button class="player-name-btn">Change name</button>
+                </li>
+                <li>
+                    <h2>Player2</h2>
+                    <h3>Player name</h3>
+                    <button class="player-name-btn">Change name</button>
+                </li>
+            </ol>
+        </section>
+    </main>
     <footer></footer>
 </body>
+
 </html>
