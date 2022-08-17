@@ -1,0 +1,41 @@
+#game article {
+    padding: 1rem;
+    border: 2px solid var(--color-main);
+    border-radius: 4px;
+    max-width: 40rem;
+    margin: 1rem auto;
+}
+#game-board {
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 8rem);
+  grid-template-rows: repeat(3, 8rem);
+  justify-content: center;
+  width: fit-content;
+}
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: var(--color-main);
+  border: 3px solid black;
+}
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+.cell:nth-child(3n){
+    border-right: none;
+}
+.cell:nth-child(3n+1) {
+    border-left: none;
+}
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:last-child {
+    border-bottom: none;
+}
