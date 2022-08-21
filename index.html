@@ -34,28 +34,34 @@
                 <li>
                     <h2>Player1</h2>
                     <span class="player-symbol">O</span>
-                    <form action="">
+                    <form data-playerid="1">
                         <h3>
                             <span class="material-symbols-rounded">
                                 edit
                             </span>
-                            Player name
+                            <span class="player-name">Player name</span>
                         </h3>
-                        <div class="input-control"><input class="player-name-input" type="text"></div>
+                        <div class="input-control">
+                            <input class="player-name-input" type="text" name="username">
+                            <p></p>
+                        </div>
                         <button class="player-name-btn">Save</button>
                     </form>
                 </li>
                 <li>
                     <h2>Player2</h2>
                     <span class="player-symbol">X</span>
-                    <form action="">
+                    <form data-playerid="2">
                         <h3>
                                 <span class="material-symbols-rounded" id="icon">
                                     edit
                                 </span>
-                                Player name
+                                <span class="player-name">Player name</span>
                         </h3>
-                        <div class="input-control"><input class="player-name-input" type="text"></div>
+                        <div class="input-control">
+                            <input class="player-name-input" type="text" name="username" placeholder="Your name">
+                            <p></p>
+                        </div>
                         <button class="player-name-btn">Save</button>
                     </form>
                 </li>
