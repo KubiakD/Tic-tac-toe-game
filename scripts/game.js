@@ -8,8 +8,10 @@ function changeActivePlayer() {
 
 function selectField(event) {
     const selectedField = event.target;
-
+    if(selectedField.innerText === ''){
     selectedField.innerText = players[activePlayer].symbol;
+    selectedField.classList.add('disabled');
     changeActivePlayer();
-    
+    }
+    return
 }
