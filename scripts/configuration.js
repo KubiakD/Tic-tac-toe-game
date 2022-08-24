@@ -46,5 +46,10 @@ function showGameBoard(){
         alert('Please select names before starting the game!')
         return
     }
+    for (const cell of gameBoardFields){
+    cell.innerText = '';
+    cell.className = 'cell'
+    }
+    activePlayer = 0;
     gameBoard.style.display = 'grid'
 };
