@@ -83,3 +83,6 @@
     font-size: 1.75rem;
     padding: 1.75rem;
 }
+.cell {
+    cursor: pointer;
+}

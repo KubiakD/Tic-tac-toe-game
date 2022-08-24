@@ -9,7 +9,7 @@ const players = [
     }
 ]
 
-// let activePlayer = 0;
+let activePlayer = 0;
 // let editedPlayer = 0;
 // let currentRound = 1;
 
@@ -21,6 +21,7 @@ const errorOutput = document.getElementsByClassName('config-error');
 
 const startNewGameBtn = document.getElementById('start-game-btn');
 const gameBoard = document.getElementById('game-board');
+const gameBoardFields = document.getElementsByClassName('cell');
 
 for (const icon of changeNameIcon) {
     icon.addEventListener('click', enableUserInput);
@@ -29,3 +30,7 @@ for (const form of formElements) {
     form.addEventListener('submit', savePlayerName)
 }
 startNewGameBtn.addEventListener('click', showGameBoard);
+
+for (const cell of gameBoardFields) {
+    cell.addEventListener('click', selectField)  
+}
