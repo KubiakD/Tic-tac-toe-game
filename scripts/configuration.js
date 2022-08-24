@@ -51,5 +51,7 @@ function showGameBoard(){
     cell.className = 'cell'
     }
     activePlayer = 0;
+    playerTurnParagraph.style.display = 'block';
+    playerTurnSpan.innerText = players[activePlayer].name;
     gameBoard.style.display = 'grid'
 };

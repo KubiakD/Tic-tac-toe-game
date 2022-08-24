@@ -12,6 +12,7 @@ function selectField(event) {
     selectedField.innerText = players[activePlayer].symbol;
     selectedField.classList.add('disabled');
     changeActivePlayer();
+    playerTurnSpan.innerText = players[activePlayer].name;
     }
     return
 }

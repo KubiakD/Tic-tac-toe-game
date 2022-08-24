@@ -22,6 +22,8 @@ const errorOutput = document.getElementsByClassName('config-error');
 const startNewGameBtn = document.getElementById('start-game-btn');
 const gameBoard = document.getElementById('game-board');
 const gameBoardFields = document.getElementsByClassName('cell');
+const playerTurnParagraph = document.getElementById('turn');
+const playerTurnSpan = document.getElementById('playerTurn')
 
 for (const icon of changeNameIcon) {
     icon.addEventListener('click', enableUserInput);
