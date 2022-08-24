@@ -42,5 +42,9 @@ function savePlayerName(event){
 }
 
 function showGameBoard(){
+    if(players[0].name === '' && players[1].name===''){
+        alert('Please select names before starting the game!')
+        return
+    }
     gameBoard.style.display = 'grid'
 };
