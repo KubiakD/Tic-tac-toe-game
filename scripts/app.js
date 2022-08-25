@@ -1,10 +1,18 @@
+const gameBoardData = [
+[0, 0, 0],
+[0, 0, 0],
+[0, 0, 0]
+];
+
 const players = [
     {
         name:'',
+        id:1,
         symbol:'O'
     },
     {
         name:'',
+        id:2,
         symbol:'X'
     }
 ]

@@ -8,11 +8,16 @@ function changeActivePlayer() {
 
 function selectField(event) {
     const selectedField = event.target;
+    const selectedRow = selectedField.dataset.row;
+    const selectedColumn = selectedField.dataset.col;
+    
     if(selectedField.innerText === ''){
     selectedField.innerText = players[activePlayer].symbol;
     selectedField.classList.add('disabled');
     changeActivePlayer();
     playerTurnSpan.innerText = players[activePlayer].name;
+
+    gameBoardData[selectedRow][selectedColumn] = players[activePlayer].id;
     }
     return
 }
