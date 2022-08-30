@@ -18,8 +18,7 @@ const players = [
 ]
 
 let activePlayer = 0;
-// let editedPlayer = 0;
-// let currentRound = 1;
+let currentRound = 0;
 
 const changeNameIcon = document.getElementsByClassName('material-symbols-rounded');
 const nameInput = document.getElementsByClassName('player-name-input');
@@ -31,7 +30,9 @@ const startNewGameBtn = document.getElementById('start-game-btn');
 const gameBoard = document.getElementById('game-board');
 const gameBoardFields = document.getElementsByClassName('cell');
 const playerTurnParagraph = document.getElementById('turn');
-const playerTurnSpan = document.getElementById('playerTurn')
+const playerTurnSpan = document.getElementById('playerTurn');
+const winnerArticle = document.getElementById('winner-article');
+const winnerArticleSpan = winnerArticle.firstElementChild.firstElementChild;
 
 for (const icon of changeNameIcon) {
     icon.addEventListener('click', enableUserInput);

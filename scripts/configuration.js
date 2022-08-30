@@ -41,17 +41,26 @@ function savePlayerName(event){
 
 }
 
-function showGameBoard(){
-    if(players[0].name === '' && players[1].name===''){
-        alert('Please select names before starting the game!')
-        return
-    }
-    for (const cell of gameBoardFields){
-    cell.innerText = '';
-    cell.className = 'cell'
-    }
-    activePlayer = 0;
-    playerTurnParagraph.style.display = 'block';
-    playerTurnSpan.innerText = players[activePlayer].name;
-    gameBoard.style.display = 'grid'
+function showGameBoard() {
+  if (players[0].name === "" && players[1].name === "") {
+    alert("Please select names before starting the game!");
+    return;
+  }
+  for (const cell of gameBoardFields) {
+    cell.innerText = "";
+    cell.className = "cell";
+  }
+  for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+    gameBoardData[i][j] = 0;
+  }
+};
+  currentRound = 0;
+  activePlayer = 0;
+  winnerArticle.firstElementChild.innerHTML =
+    'You won, <span id="winner">Player name</span>!';
+  winnerArticle.style.display = "none";
+  playerTurnParagraph.style.display = "block";
+  playerTurnSpan.innerText = players[activePlayer].name;
+  gameBoard.style.display = "grid";
 };
