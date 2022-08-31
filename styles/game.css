@@ -11,8 +11,8 @@
   list-style: none;
   padding: 0;
   margin: 2rem auto;
-  grid-template-columns: repeat(3, 13rem);
-  grid-template-rows: repeat(3, 13rem);
+  grid-template-columns: repeat(3, 11rem);
+  grid-template-rows: repeat(3, 11rem);
   justify-content: center;
   width: fit-content;
 }
@@ -20,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 10rem;
+  font-size: 8rem;
   color: var(--color-main);
   border: 3px solid black;
 }
