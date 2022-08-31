@@ -57,8 +57,6 @@ function showGameBoard() {
 };
   currentRound = 0;
   activePlayer = 0;
-  winnerArticle.firstElementChild.innerHTML =
-    'You won, <span id="winner">Player name</span>!';
   winnerArticle.style.display = "none";
   playerTurnParagraph.style.display = "block";
   playerTurnSpan.innerText = players[activePlayer].name;

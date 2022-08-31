@@ -32,7 +32,7 @@ const gameBoardFields = document.getElementsByClassName('cell');
 const playerTurnParagraph = document.getElementById('turn');
 const playerTurnSpan = document.getElementById('playerTurn');
 const winnerArticle = document.getElementById('winner-article');
-const winnerArticleSpan = winnerArticle.firstElementChild.firstElementChild;
+const winnerArticleSpan = document.getElementById('winner');
 
 for (const icon of changeNameIcon) {
     icon.addEventListener('click', enableUserInput);

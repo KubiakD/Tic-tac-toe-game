@@ -14,16 +14,16 @@ function selectField(event) {
     const selectedColumn = selectedField.dataset.col;
     
     if(selectedField.innerText === ''){
-    selectedField.innerText = players[activePlayer].symbol;
-    selectedField.classList.add('disabled');
-    
-    gameBoardData[selectedRow][selectedColumn] = players[activePlayer].id;
-    
-    changeActivePlayer();
-    const winnerId = checkForWinner();
-    if (winnerId !== 0){
-        endGame(winnerId);
-    };
+        selectedField.innerText = players[activePlayer].symbol;
+        selectedField.classList.add('disabled');
+        
+        gameBoardData[selectedRow][selectedColumn] = players[activePlayer].id;
+        
+        changeActivePlayer();
+        const winnerId = checkForWinner();
+        if (winnerId !== 0){
+            endGame(winnerId);
+        };
     }
 return
 }
