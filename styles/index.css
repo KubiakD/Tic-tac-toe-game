@@ -39,16 +39,18 @@
 .player-config li>h2{
     margin: 0;
     font-weight: 700;
+    color: var(--font-color);
 }
 .player-symbol {
     font-weight: bold;
-    font-size: 2rem;
-    margin: 1rem 0;
+    font-size: 4rem;
+    margin: 0.2rem 0;
 
 }
-#player-config li>h3{
-    color: var(--font-color);
+#player-config h3{
+    color: var(--color-main);
     margin: 1rem 0;
+    font-size: 2rem;
 }
 .input-control {
     text-align: center;
@@ -62,7 +64,7 @@
     width: 90%;
     color: var(--font-color);
     font-family: inherit;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 .player-name-input:focus {
  outline: none;
