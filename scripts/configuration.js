@@ -55,6 +55,7 @@ function showGameBoard() {
     gameBoardData[i][j] = 0;
   }
 };
+  gameIsOver = false;
   currentRound = 0;
   activePlayer = 0;
   winnerArticle.style.display = "none";

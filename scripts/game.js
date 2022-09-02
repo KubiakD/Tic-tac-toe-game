@@ -13,19 +13,19 @@ function selectField(event) {
     const selectedRow = selectedField.dataset.row;
     const selectedColumn = selectedField.dataset.col;
     
-    if(selectedField.innerText === ''){
-        selectedField.innerText = players[activePlayer].symbol;
-        selectedField.classList.add('disabled');
-        
-        gameBoardData[selectedRow][selectedColumn] = players[activePlayer].id;
-        
-        changeActivePlayer();
-        const winnerId = checkForWinner();
-        if (winnerId !== 0){
-            endGame(winnerId);
-        };
+    if(selectedField.innerText !== '' || gameIsOver){
+        return
     }
-return
+    selectedField.innerText = players[activePlayer].symbol;
+    selectedField.classList.add('disabled');
+    
+    gameBoardData[selectedRow][selectedColumn] = players[activePlayer].id;
+    
+    changeActivePlayer();
+    const winnerId = checkForWinner();
+    if (winnerId !== 0){
+        endGame(winnerId);
+    };
 }
 
 function checkForWinner() {
@@ -62,6 +62,7 @@ function checkForWinner() {
 }
 
 function endGame(winnerId) {
+    gameIsOver = true;
     winnerArticle.style.display = 'block';
     if ( winnerId > 0 ) {
         winnerArticleSpan.innerText = players[winnerId-1].name;

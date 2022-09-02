@@ -16,7 +16,7 @@ const players = [
         symbol:'X'
     }
 ]
-
+let gameIsOver = false;
 let activePlayer = 0;
 let currentRound = 0;
 
