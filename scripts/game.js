@@ -65,9 +65,9 @@ function endGame(winnerId) {
     gameIsOver = true;
     winnerArticle.style.display = 'block';
     if ( winnerId > 0 ) {
-        winnerArticleSpan.innerText = players[winnerId-1].name;
-    } else {
+        winnerArticle.firstElementChild.firstElementChild.innerText = players[winnerId-1].name;
+      } else {
         winnerArticle.firstElementChild.innerHTML = "It's a draw!";
-    };
+      };
     playerTurnParagraph.style.display = 'none';
 };
