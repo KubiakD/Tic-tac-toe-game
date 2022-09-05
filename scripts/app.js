@@ -20,6 +20,7 @@ let gameIsOver = false;
 let activePlayer = 0;
 let currentRound = 0;
 
+const gameSection = document.getElementById('game');
 const changeNameIcon = document.getElementsByClassName('material-symbols-rounded');
 const nameInput = document.getElementsByClassName('player-name-input');
 const formElements = document.querySelectorAll('form');

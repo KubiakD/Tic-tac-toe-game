@@ -102,4 +102,5 @@ function endGame(winnerId) {
     winnerArticle.firstElementChild.innerHTML = "It's a draw!";
   }
   playerTurnParagraph.style.display = "none";
+  gameSection.scrollIntoView();
 }
