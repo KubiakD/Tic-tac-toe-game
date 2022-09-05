@@ -2,6 +2,7 @@ html {
     --color-main: rgb(93, 15, 93);
     --color-lighter: rgb(141, 15, 141);
     --font-color: rgb(80, 74, 74);
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;
