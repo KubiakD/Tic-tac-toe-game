@@ -97,7 +97,7 @@
     cursor: pointer;
 }
 .cell:hover {
-    background-color: rgb(93, 15, 93, 0.2);
+    background-color: var(--color-transparent);
 }
 .disabled {
     cursor: default;
