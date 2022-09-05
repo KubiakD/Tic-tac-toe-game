@@ -32,7 +32,6 @@ const gameBoardFields = document.getElementsByClassName('cell');
 const playerTurnParagraph = document.getElementById('turn');
 const playerTurnSpan = document.getElementById('playerTurn');
 const winnerArticle = document.getElementById('winner-article');
-// let winnerArticleSpan = document.getElementById('winner');
 
 for (const icon of changeNameIcon) {
     icon.addEventListener('click', enableUserInput);
@@ -40,7 +39,7 @@ for (const icon of changeNameIcon) {
 for (const form of formElements) {
     form.addEventListener('submit', savePlayerName)
 }
-startNewGameBtn.addEventListener('click', showGameBoard);
+startNewGameBtn.addEventListener('click', startNewGame);
 
 for (const cell of gameBoardFields) {
     cell.addEventListener('click', selectField)  
