@@ -10,7 +10,7 @@ body {
     font-family: 'Roboto Serif', serif;
     text-align: center;
 }
-header {
+header, footer {
     background-color: var(--color-main);
     padding: 1.5rem;
     box-shadow: 0px 0px 1px black;
@@ -41,4 +41,36 @@ button:hover {
     font-size: 2rem;
     cursor: pointer;
     color: black;
+}
+footer {
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+footer p {
+    margin: 0;
+    margin-bottom: 0.25rem;
+}
+footer img {
+    width: 3rem;
+    object-fit: cover;
+}
+.color {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.color:hover {
+    cursor: pointer;
+    border: solid 2px white;
+}
+#navy-blue {
+    background-color: rgb(12, 12, 73);
+}
+#yellow {
+    background-color: rgb(255, 255, 0);
 }
