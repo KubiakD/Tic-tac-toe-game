@@ -81,15 +81,39 @@ footer img {
     padding: 0;
 }
 .color {
+    display: inline-block;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    display: inline-block;
     box-sizing: border-box;
+    position: relative;
+}
+.color::before,
+.color::after {
+    --scale: 0;
+
+
+    position: absolute;
+    top: -0.25rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+}
+.color::before{
+    content: attr(data-theme);
+    background-color: var(--color-lighter);
+    width: max-content;
+    max-width: 100%;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    border-radius: 0.25rem;
 }
 .color:hover {
     cursor: pointer;
     border: solid 2px white;
+}
+.color:hover::before {
+    --scale: 1;
 }
 #default {
     background-color: rgb(93, 15, 93);
