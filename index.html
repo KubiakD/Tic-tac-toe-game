@@ -16,6 +16,7 @@
     <script src="/scripts/game.js" defer></script>
     <script src="/scripts/configuration.js" defer></script>
     <script src="/scripts/app.js" defer></script>
+    <script src="/scripts/themes.js" defer></script>
 </head>
 
 <body>
@@ -94,9 +95,12 @@
             <a href="https://github.com/KubiakD/My-own-tic-tac-toe-game" target="_blank"><img src="/icons/github-icon.png" alt=""></a>
         </section>
         <section>
-            <p>Change the page theme</p>
-            <div class="color" id="navy-blue"></div>
-            <div class="color" id="yellow"></div>
+            <p>Change the page theme</p> 
+            <ul id="themes">
+                <li class="color current-theme" id="default" data-color="default"></li>
+                <li class="color" id="navy-blue" data-color="navyBlue"></li>
+                <li class="color" id="dark-mode" data-color="darkMode"></li>
+            </ul>
         </section>
     </footer>
 </body>

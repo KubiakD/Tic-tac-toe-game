@@ -1,14 +1,33 @@
 html {
     --color-main: rgb(93, 15, 93);
     --color-lighter: rgb(141, 15, 141);
+    --color-transparent: rgb(93, 15, 93, 0.2);
+    --color-background: white;
     --font-color: rgb(80, 74, 74);
     scroll-behavior: smooth;
+}
+html[data-theme = 'navyBlue'] {
+    --color-main: rgb(12, 12, 73);
+    --color-lighter: rgb(12, 12, 240);
+    --color-transparent: rgb(12, 12, 240, 0.2);
+    --color-background: white;
+
+}
+html[data-theme = 'darkMode'] {
+    --color-main: rgb(33, 34, 39);
+    --color-lighter: rgb(103, 105, 113);
+    --color-transparent: rgb(103, 105, 113, 0.2);
+    --color-background: rgb(88, 88, 88);
+    --font-color: whiteg;
+
+
 }
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Serif', serif;
     text-align: center;
+    background-color: var(--color-background);
 }
 header, footer {
     background-color: var(--color-main);
@@ -57,6 +76,10 @@ footer img {
     width: 3rem;
     object-fit: cover;
 }
+#themes {
+    margin: 0;
+    padding: 0;
+}
 .color {
     width: 3rem;
     height: 3rem;
@@ -68,9 +91,15 @@ footer img {
     cursor: pointer;
     border: solid 2px white;
 }
+#default {
+    background-color: rgb(93, 15, 93);
+}
 #navy-blue {
     background-color: rgb(12, 12, 73);
 }
-#yellow {
-    background-color: rgb(255, 255, 0);
+#dark-mode {
+    background-color: rgb(33, 34, 39);
+}
+.current-theme {
+    display: none;
 }
