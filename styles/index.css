@@ -93,15 +93,4 @@
 #playerTurn {
     font-weight: bold;
 }
-.cell {
-    cursor: pointer;
-}
-.cell:hover {
-    background-color: var(--color-transparent);
-}
-.disabled {
-    cursor: default;
-}
-.disabled:hover {
-    background-color: unset;
-}
+

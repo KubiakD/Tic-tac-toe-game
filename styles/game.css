@@ -22,6 +22,10 @@
   font-size: 8rem;
   color: var(--color-main);
   border: 3px solid black;
+  cursor: pointer;
+}
+.cell:hover {
+    background-color: var(--color-transparent);
 }
 .cell:first-child,
 .cell:nth-child(2),
@@ -38,4 +42,10 @@
 .cell:nth-child(8),
 .cell:last-child {
     border-bottom: none;
+}
+.disabled {
+    cursor: default;
+}
+.disabled:hover {
+    background-color: unset;
 }
