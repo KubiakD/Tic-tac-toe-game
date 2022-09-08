@@ -14,11 +14,11 @@ html[data-theme = 'navyBlue'] {
 
 }
 html[data-theme = 'darkMode'] {
-    --color-main: rgb(33, 34, 39);
-    --color-lighter: rgb(103, 105, 113);
-    --color-transparent: rgb(103, 105, 113, 0.2);
-    --color-background: rgb(88, 88, 88);
-    --font-color: whiteg;
+    --color-main: rgb(19, 19, 21);
+    --color-lighter: rgb(37, 52, 170);
+    --color-transparent: rgb(37, 52, 170, 0.2);
+    --color-background: rgb(99, 97, 97);
+    --font-color: white;
 
 
 }
