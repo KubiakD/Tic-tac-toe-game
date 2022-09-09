@@ -1,3 +1,8 @@
+#start-game-btn {
+    margin-top: 1.5rem;
+    font-size: 1.75rem;
+    padding: 1.75rem;
+}
 #game article {
     display: none;
     padding: 1rem;
@@ -6,20 +11,27 @@
     max-width: 40rem;
     margin: 1rem auto;
 }
+#turn {
+    display: none;
+    font-size: 1.5rem;
+}
+#playerTurn {
+    font-weight: bold;
+}
 #game-board {
   display: none;
   list-style: none;
   padding: 0;
   margin: 2rem auto;
-  grid-template-columns: repeat(3, 10rem);
-  grid-template-rows: repeat(3, 10rem);
+  grid-template-columns: repeat(3, 9rem);
+  grid-template-rows: repeat(3, 9rem);
   justify-content: center;
 }
 .cell {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 8rem;
+  font-size: 7.5rem;
   color: var(--color-main);
   border: 3px solid black;
   cursor: pointer;
